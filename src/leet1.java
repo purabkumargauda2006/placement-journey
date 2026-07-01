@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class leet1 {
+    public static void main(String[] args) {
+        int[] arr = new int[3];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Array input: ");
+        for(int i =0; i <=arr.length-1; i++){
+            arr[i] = sc.nextInt();
+        }
+        System.out.println("Enter Target: ");
+        int target = sc.nextInt();
+        for(int i = 0;i < arr.length;i++) {
+            for(int j = i+1; j < arr.length;j++) {
+                if(arr[i]+arr[j]==target) {
+                    System.out.println("required indices are "+i+"&" +j);
+                }
+            }
+        }
+
+    }
+}
