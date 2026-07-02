@@ -7,6 +7,10 @@ public class Main2 {
         s1.setAge(-5);
         s1.setAge(25);
         System.out.println(s1.getAge());
+        CollegeStudent cs1 = new CollegeStudent("Purab", 20, 7.9f, "GIET University", "Computer Science");
+        System.out.println(cs1.getName());
+        System.out.println(cs1.branch);
+        cs1.introduce();
 
                 s1.introduce();
                 s2.introduce();
